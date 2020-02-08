@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/jackson-datatype-guava-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/spring-context-3.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/jackson-annotations-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/spring-core-5.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Sandeep/Career/Interview Preparation/spring-web-5.2.1.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

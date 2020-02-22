@@ -15,7 +15,7 @@ public class AccessModifierTest {
 public static void main(String[] args) {
 	Caller c = new Caller();
 	c.start();
-	//c.init(); init method is not accessible
+	//c.init(); //init method is not accessible
 }
 }
 

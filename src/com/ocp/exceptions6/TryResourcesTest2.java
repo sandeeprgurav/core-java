@@ -6,7 +6,7 @@ import java.io.IOException;
 public class TryResourcesTest2 {
 	 static class MyDatabase implements Closeable {
 	      //public void close() throws SQLException { // Thows Exception should be IOException
-	      public void close() throws IOException {
+	     public void close() throws IOException {
 	         System.out.print("2");
 	      }
 	      public void write(String data) {}

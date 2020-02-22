@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 class Test12 {
-	public void printFileContent() throws IOException {
+	public void printFileContent() throws IOException {		
 		throw new IOException();
 	}
 }

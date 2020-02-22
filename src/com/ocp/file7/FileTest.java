@@ -22,6 +22,10 @@ public class FileTest {
 	}
 }
 
+/* Options:
+1. The implementation correctly copies a regular file.
+2. The class compiles without issue.
+3. The class never throws an exception at runtime.
+4. All of the above*/
+
 // Ans: The class compiles without issue.
-
-

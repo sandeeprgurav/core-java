@@ -18,6 +18,7 @@ public class DbTest3 {
 		rs.next();
 		rs.next();
 		rs.absolute(2);
+		
 		System.out.println(rs.getString(1));
 		}
 	}

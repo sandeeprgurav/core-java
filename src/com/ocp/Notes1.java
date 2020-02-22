@@ -6,8 +6,8 @@ public class Notes1 {
 	 * # Which of the following statements about inheritance and object composition
 	 * are correct? 1.Object composition requires a class variable to be declared
 	 * public or accessible from a public method to be used by a class in a
-	 * different package.| 2.Inheritance supports access to protected variables.
-	 * 3. Object composition tends to promote greater code reuse than inheritance.
+	 * different package.| 2.Inheritance supports access to protected variables. 3.
+	 * Object composition tends to promote greater code reuse than inheritance.
 	 * 
 	 * Writable : Compilation fails due to an error at line n3.
 	 * 
@@ -25,12 +25,12 @@ public class Notes1 {
 	 * LocalDate.of(2016, 3, 13)
 	 * 
 	 * Which two statements are true for a two-dimensional array of primitive data
-	 * type? 1. All methods of the class object may be invoked on the two-dimensional
-	 * array. 2. At the declaration time, the number of elements of the array in each
-	 * dimension must be specified.
+	 * type? 1. All methods of the class object may be invoked on the
+	 * two-dimensional array. 2. At the declaration time, the number of elements of
+	 * the array in each dimension must be specified.
 	 * 
-	 * Which of the following are valid lambda expressions? 1. () -> "" | 2. (Camel c) ->
-	 * {return;}
+	 * Which of the following are valid lambda expressions? 1. () -> "" | 2. (Camel
+	 * c) -> {return;}
 	 * 
 	 * Which of the following can we add after line 5 for the code to run without
 	 * error and not produce any output? 4: Longb Stream ls = LongStream.of(1, 2,
@@ -136,21 +136,19 @@ public class Notes1 {
 	 * System.out.print(halleysComet.equals(lexellsComet) ? "Same!" : "Different!");
 	 * ==>> Same!
 	 * 
-	 * Given the code fragment:
-	 * List<Integer> list1 = Arrays.asList(10, 20); List<Integer> list2 =
-	 * Arrays.asList(15, 30); //line n1
-	 * Which code fragment, when inserted at line n1, prints 10 20 15 30?
-	 * ==>>Stream.of(list1, list2).flatMap(list -> list.stream()).forEach(s ->
-	 * System.out.print(s + " "));
+	 * Given the code fragment: List<Integer> list1 = Arrays.asList(10, 20);
+	 * List<Integer> list2 = Arrays.asList(15, 30); //line n1 Which code fragment,
+	 * when inserted at line n1, prints 10 20 15 30? ==>>Stream.of(list1,
+	 * list2).flatMap(list -> list.stream()).forEach(s -> System.out.print(s +
+	 * " "));
 	 * 
 	 * Writer is__________ that related stream classes__________ . ==>> an abstarct
 	 * class , extend
 	 * 
 	 * If the current working directory is /zoo, and the path /zoo/turkey does not
-	 * exist, then what is the result of executing the following code?
-	 * Path path = Paths.get("turkey");
-	 * if(Files.isSameFile(path,Paths.get("/zoo/turkey"))) // x1
-	 * Files.createDirectory(path.resolve("info")); // x2 ==>> It compiles but
+	 * exist, then what is the result of executing the following code? Path path =
+	 * Paths.get("turkey"); if(Files.isSameFile(path,Paths.get("/zoo/turkey"))) //
+	 * x1 Files.createDirectory(path.resolve("info")); // x2 ==>> It compiles but
 	 * throws an exception at runtime.
 	 * 
 	 * When reading file information, what is an advantage of loading a
@@ -207,15 +205,15 @@ public class Notes1 {
 	 * .filter(Runner::isFourMinuteMile) ==>> None of the above
 	 * 
 	 * Assuming the current working directory is /hail, what is the expected output
-	 * of executing the following code snippet?
-	 * Path w1 = Paths.get("../jungle/.././rain..") .toAbsolutePath().normalize();
+	 * of executing the following code snippet? Path w1 =
+	 * Paths.get("../jungle/.././rain..") .toAbsolutePath().normalize();
 	 * System.out.print(w1.resolve("snow.txt")); ==>> /rain../snow.txt
 	 * 
-	 * Which of the following could be inserted to fill in the blank?
-	 * public interface Otter { default void play() { } } class River Otter
-	 * implements Otter { __} ==>> 1. @Override public boolean equals(Object o) {
-	 * return false; } 2. @Override public int hashCode() { return 42; } 3.@Override
-	 * public void play() { }
+	 * Which of the following could be inserted to fill in the blank? public
+	 * interface Otter { default void play() { } } class River Otter implements
+	 * Otter { __} ==>> 1. @Override public boolean equals(Object o) { return false;
+	 * } 2. @Override public int hashCode() { return 42; } 3.@Override public void
+	 * play() { }
 	 * 
 	 * Given the following four properties files, what does this code print? ==>>
 	 * France moteur
@@ -256,9 +254,9 @@ public class Notes1 {
 	 * System.out.println(Files.isSameFile(path1, path2)); //k3 ==>> It will output
 	 * false.
 	 * 
-	 * Which can independently fill in the blank to output No dessert today?
-	 * import java.util.*; public class Dessert { public static void main(String[]
-	 * yum) { eatDessert(Optional.of("Cupcake")); } private static void
+	 * Which can independently fill in the blank to output No dessert today? import
+	 * java.util.*; public class Dessert { public static void main(String[] yum) {
+	 * eatDessert(Optional.of("Cupcake")); } private static void
 	 * eatDessert(Optional<String> opt) { System.out.println(opt.____________); }
 	 * }==>> None of the above
 	 * 
@@ -274,9 +272,8 @@ public class Notes1 {
 	 * the error handling code is separated from the normal program function
 	 * 
 	 * Given the following two variables, which assertion statement compiles
-	 * successfully?
-	 * int age = 22; final String name = "Josephine"; ==>> assert age!=age : (1<age
-	 * ? "Error" : 10);
+	 * successfully? int age = 22; final String name = "Josephine"; ==>> assert
+	 * age!=age : (1<age ? "Error" : 10);
 	 * 
 	 * What is the output of the following code? Local Date Time d =
 	 * LocalDateTime.of(2015, 5, 10, 11, 22, 33); Period p = Period.of(1, 2, 3); d =
@@ -453,6 +450,11 @@ public class Notes1 {
 	 * stream.sorted().findAny().ifPresent(System.out::println); // z2 ==>> It can
 	 * print any single character of a, b, or c.
 	 * 
+	 * Stream<Character> stream = Stream.of('c', 'b', 'a');
+	 * System.out.println(stream.sorted().findFirst()); 1. It is guaranteed to print
+	 * the single character a. 2. It can print any single character of a, b, or c.
+	 * 3. None of the above 4. The code does not compile. ==>> 3
+	 * 
 	 * Starting with DoubleConsumer and going downward, fill in the missing values
 	 * for the table. DoubleConsumer IntFunction LongSupplier ObjDoubleConsumer ==>>
 	 * 1, 1, 0, 2
@@ -463,10 +465,10 @@ public class Notes1 {
 	 * withoutFlatMap(queue);
 	 *
 	 * public class TicketManager { private Ticket Manager() { super(); } private
-	 * static Ticket Manager instance; public static synchronized Ticket Manager get
-	 * Instance() { // k1 if (instance == null) instance = new Ticket Manager(); //
-	 * k2 return instance; } private int tickets; public int get Ticket Count() {
-	 * return tickets; } public void make Tickets Available(int value) { tickets +=
+	 * static TicketManager instance; public static synchronized TicketManager get
+	 * Instance() { // k1 if (instance == null) instance = new TicketManager(); //
+	 * k2 return instance; } private int tickets; public int getTicketCount() {
+	 * return tickets; } public void makeTicketsAvailable(int value) { tickets +=
 	 * value; } // k3 public void sell Tickets(int value) { synchronized (this) { //
 	 * k4 tickets -= value; } } } ==>> 1. It compiles without issue. 2. At most one
 	 * instance of TicketManager will be created in the application.
@@ -550,13 +552,10 @@ public class Notes1 {
 	 *
 	 * Assuming the proper generic types are used, which lambda expression cannot be
 	 * assigned to a ToDoubleBiFunction functional interface reference? ==>>String
-	 * u, Object v) -> u.length()+v.length()
+	 * u, Object v) -> u.length()+v.length() ==>> walk,toddle,
 	 * 
-	 * ==>> walk,toddle,
-	 * 
-	 * ______________________________ return now.getMonth() == dateTime.getMonth()
-	 * && now.getDayOfMonth() == dateTime.getDayOfMonth(); } ==>> LocalDate now =
-	 * LocalDate.now();
+	 * __ return now.getMonth() == dateTime.getMonth() && now.getDayOfMonth() ==
+	 * dateTime.getDayOfMonth(); } ==>> LocalDate now = LocalDate.now();
 	 * 
 	 * ==>> 4 : 4 : 4
 	 * 
@@ -640,7 +639,8 @@ public class Notes1 {
 	 * Fork/Join framework implements a work-stealing algorithm.
 	 * 
 	 * Content of the new.txt : ABCD | FileReader fr = new FileReader("new.txt");
-	 * System.out.println(fr.read()); fr.close(); ==>> 65
+	 * System.out.println(fr.read()); fr.close(); ==>> 65 // fr.read() reads first
+	 * character
 	 * 
 	 * ==>> Y YY
 	 * 
@@ -659,14 +659,6 @@ public class Notes1 {
 	 * 
 	 * What is true of the following if the music database exists and contains a
 	 * songs table with one row when run using a JDBC 4.0 driver? (Choose two.)
-	 * 
-	 * import java.sql.*; public class Music { public static void main(String[]
-	 * args) throws Exception { String url = "jdbc:derby:music"; Connection conn =
-	 * DriverManager.getConnection(url); Statement stmt = conn.createStatement();
-	 * stmt.execute("update songs set name = 'The New Song'"); } }
-	 * 
-	 * What is true of the following if the music database exists and contains a
-	 * songs table with one row when run using a JDBC 4.0 driver? (Choose two.)
 	 * import java.sql.*; public class Music { public static void main(String[]
 	 * args) throws Exception { String url = "jdbc:derby:music"; Connection conn =
 	 * DriverManager.getConnection(url); Statement stmt = conn.createStatement();
@@ -674,7 +666,7 @@ public class Notes1 {
 	 * runs without error. 2.. The execute() method returns a boolean.
 	 * 
 	 * Which is true the regarding the java.nio.file.Path interface? ==>> The
-	 * interface extends the WatchService interface.
+	 * interface extends WatchService interface
 	 * 
 	 * What technique allows multiple variables from the same class to be shared
 	 * across all instances of a class? ==>> static
@@ -785,8 +777,10 @@ public class Notes1 {
 	 * result.
 	 * 
 	 * Which methods listed below are found in the NIO.2 Files class? ==>> only
-	 * isSameFile() If the current working directory is /user/home, then what is the
-	 * output of the following code? Path path =
+	 * isSameFile()
+	 * 
+	 * If the current working directory is /user/home, then what is the output of
+	 * the following code? Path path =
 	 * Paths.get("/zoo/animals/bear/koala/food.txt");
 	 * System.out.println(path.subpath(1,3).getName(1).toAbsolutePath()); ==>>
 	 * /user/home/bear
@@ -857,7 +851,7 @@ public class Notes1 {
 	 * ==>> Offer ability to create new enumerated values at runtime.
 	 *
 	 * Which functional interface takes two values and has an apply() method? ==>>
-	 * BiPredicate
+	 * BiFunction
 	 *
 	 * mystery=bag type=paper System.out.print(props.getProperty("mystery", "?"));
 	 * System.out.print(" "); System.out.print(props.getProperty("more", "?")); ==>>
@@ -868,8 +862,10 @@ public class Notes1 {
 	 *
 	 * Starting with DoubleConsumer and going downward, fill in the values for the
 	 * table. For the choices below, assume R is a generic typ >> DoubleConsumer |
-	 * IntFunction | LongSupplier | ObjDoubleConsume ==>> void, R, long, void
+	 * IntFunction | LongSupplier | ObjDoubleConsumer ==>> void, R, long, void
 	 * 
+	 * Given a valid conn object of type Connection, what will happen if you run
+	 * this code when the requested mode is not supported?
 	 * conn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,
 	 * ResultSet.CONCUR_UPDATABLE); ==>> The code will run without throwing an
 	 * exception.
@@ -934,6 +930,10 @@ public class Notes1 {
 	 * DateTimeFormatter .ofPattern("m.ddhhMM");
 	 * System.out.println(formatter.format(pi)); } } ==>> 59.140103
 	 * 
+	 * LocalDateTime pi = LocalDateTime.of(2017, 3, 14, 1, 59); DateTimeFormatter
+	 * formatter = DateTimeFormatter .ofPattern("M.ddhhmm");
+	 * System.out.println(formatter.format(pi)); ==>> 3.140159
+	 * 
 	 * String url = "jdbc:derby:clowns"; try (Connection conn =
 	 * DriverManager.getConnection(url); Statement stmt = conn.createStatement();
 	 * ResultSet rs = stmt.executeQuery("select count(*) from clowns")) { rs.next();
@@ -946,15 +946,13 @@ public class Notes1 {
 	 * ==>> Time of the Epoch (in milliseconds)
 	 * 
 	 * What changes need to be made to make the following immutable object pattern
-	 * correct?
-	 * 
-	 * import java.util.List; public class Seal { String name; private final
-	 * List<Seal> friends; public Seal(String name, List<Seal> friends) { this.name
-	 * = name; this.friends = friends; } public String getName() { return name; }
-	 * public List<Seal> getFriends() { return friends; } } ==>> 1. Replace the get
-	 * Friends() method with methods that do not give the caller direct access to
-	 * the List friends. 2.Make a copy of the List friends in the constructor.
-	 * 3.Mark name final and private. 4.Mark the Seal class final.
+	 * correct? import java.util.List; public class Seal { String name; private
+	 * final List<Seal> friends; public Seal(String name, List<Seal> friends) {
+	 * this.name = name; this.friends = friends; } public String getName() { return
+	 * name; } public List<Seal> getFriends() { return friends; } } ==>> 1. Replace
+	 * the get Friends() method with methods that do not give the caller direct
+	 * access to the List friends. 2.Make a copy of the List friends in the
+	 * constructor. 3.Mark name final and private. 4.Mark the Seal class final.
 	 * 
 	 * Which functional interface, when entered into the blank below, allows the
 	 * class to compile? package groceries; import java.util.*; import
@@ -1044,6 +1042,383 @@ public class Notes1 {
 	 * Which of the following stream classes are high-level? ==>> 1. PrintStream 2.
 	 * ObjectOutputStream 3. ObjectInputStream 4. PrintWriter
 	 * 
+	 * Given the following file system diagram, in which forward is a symbolic link
+	 * to the java directory, which value does not print /java/Sort.java at runtime?
+	 * Path p = Paths.get("/", "objC", "bin");
+	 * System.out.println(p.resolve("__________").toRealPath()); =>>
+	 * ../java/./forward/Sort.java
+	 * 
+	 * Let’s say you want to write a lot of text data to a file in an efficient
+	 * manner. Which two java.io stream classes are best to use? ==>> FileWriter and
+	 * BufferedWriter
+	 * 
+	 * Which two can independently fill in the blank to output No dessert today?
+	 * public class Dessert { public static void main(String[] yum) {
+	 * eatDessert(Optional.empty()); } private static void
+	 * eatDessert(Optional<String> opt) { System.out.println(opt.__________); } }
+	 * ==>> 1. orElseGet(() -> "No dessert today") 2. orElse("No dessert today")
+	 * 
+	 * Inner class can have ENUM when inner class is static, for non static inner
+	 * class it will throw compile error. Inner Static class object can not be
+	 * created using instance of outer class, compile error
+	 *
+	 * What changes need to be made to make the following singleton pattern correct?
+	 * public class Cheetah Manager { public static Cheetah Manager cheetah Manager;
+	 * private Cheetah Manager() {} public static Cheetah Manager get Cheetah
+	 * Manager() { if(cheetah Manager == null) { cheetah Manager = new Cheetah
+	 * Manager(); } return cheetah Manager; } } ==>> 1. Add synchronized to get
+	 * Cheetah Manager(). 2. Change the access modifier of cheetah Manager from
+	 * public to private.
+	 * 
+	 * Which two statements are true about localizing an application? ==>> 1.
+	 * Resource bundle files Include date and currency information. 2.Language and
+	 * region-specific programs are created using localized data.
+	 * 
+	 * Which method in the NIO.2 Files class is equivalent to the java.io.File
+	 * method length()? 1. size() 2. None of the above 3. length() 4. getLength()
+	 * ==>> size()
+	 * 
+	 * 
+	 * What are some advantages of using Files.lines() over Files.readAllLines( ==>>
+	 * 1. It can be chained with stream methods directly. 2. It can be run on large
+	 * files with very little memory available.
+	 * 
+	 * Given that version.txt is accessible and contains: 1234567890 and given the
+	 * code fragment: syso(br.read()); br.mark(); syso(br.read()); br.reset();
+	 * syso(br.read()); ==>> 122
+	 * 
+	 * Which of the following classes are checked exception? ==>> 1.
+	 * java.io.NotSerializableException 2. java.text.ParseException 3.
+	 * java.sql.SQLException
+	 * 
+	 * Which of the following methods is not available on an ExecutorService
+	 * instance? 1. execute(Runnable) 2. submit(Runnable) 3. submit(Callable) 4.
+	 * execute(Callable) ==>> execute(Callable)
+	 * 
+	 * What are some reasons to use a character stream, such as Reader/Writer, over
+	 * a byte stream, such as Input Stream/Output Stream? 1. Character streams are
+	 * high-level streams 2. Multi-threading support 3. Automatic character encoding
+	 * 4. More convenient code syntax when working with String data 5. Built-in
+	 * serialization and deserialization 6. Improved performance ==>> 3. Automatic
+	 * character encoding 4. More convenient code syntax when working with String
+	 * data
+	 * 
+	 * ==>> rs.refreshRow(); // Fetch record from the database which is commited
+	 * data in DB.
+	 * 
+	 * Which of the following are runtime exceptions? ==>> 1.
+	 * MissingResourceException 2. DateTimeParseException 3. IllegalStateException
+	 * 
+	 * Which statement best describes the difference between a Writer and an
+	 * OutputStream class? ==>> Only one of them has built-in methods for writing
+	 * character data.
+	 * 
+	 * What is lazy instantiation? ==>>A technique that can be used in a singleton
+	 * to wait until the first use to create the object
+	 * 
+	 * Fill in the blank so the code correctly compiles and creates a Locale. Locale
+	 * loc = Locale.____________________; 1. None of the above 2.
+	 * getLocale("Italian") 3. get(Locale.ITALIAN) 4. get("Italian") ==>> None of
+	 * the above
+	 * 
+	 * T - the type of the first argument to the function U - the type of the second
+	 * argument to the function R - the type of the result of the function Which
+	 * functional interface does not have the correct number of generic arguments?
+	 * 1. BiFunction<T,U,R> 2. DoubleFunction<T,R> 3. ToIntBiFunction<T,U> 4.
+	 * ToDoubleFunction<T> ==>> DoubleFunction<T,R>
+	 * 
+	 * Which technique or pattern requires instance variables to implement? ==>>
+	 * Object composition
+	 * 
+	 * Which of the following lambda expressions can be passed to a method that
+	 * takes IntFunction<Integer> as an argument? 1. (Integer f) -> f 2. (v) -> null
+	 * 3. s -> s ==>> II and III only
+	 * 
+	 * ==>> import static my.sports.Football.*; to access TEAM_SIZE of Football in
+	 * another class
+	 * 
+	 * Which of the following statements are true, assuming a and b are String
+	 * objects? ==>> 1. If a.equals(b) is false, a.hashCode() == b.hashCode() can
+	 * sometimes be true. 2. If a.equals(b) is true, a.hashCode() == b.hashCode() is
+	 * always true.
+	 * 
+	 * Which two changes would encapsulate this class ==>> 1. Change the setArea
+	 * method to private. 2. Change the area field to public.
+	 * 
+	 * Consider the three methods execute(), executeQuery(), and executeUpdate().
+	 * Fill in the blanks: __________ of these methods is/are allowed to run a
+	 * DELETE SQL statement while __________ of these methods is/are allowed to run
+	 * an UPDATE SQL statement. ==>> Two, two
+	 * 
+	 * Which of the following return primitives? 1. StringSupplier 2.DoubleSupplier
+	 * 3. CharSupplier 4.FloatSupplier 5. IntSupplier 6. BooleanSupplier ==>>
+	 * DoubleSupplier ,IntSupplier, BooleanSupplier
+	 * 
+	 * Which of the answer choices is true given the following code?
+	 * 2016–08–28T05:00 GMT-04:00 == 2016–08–28T09:00 GMT-06:00 ==>> 1. The
+	 * date/times are 6 hours apart. 2. The first date/time is earlier.
+	 * 
+	 * Fill in the blank: The primary reason default interface methods were added to
+	 * Java is to support____________ . ==>> backward compatibility
+	 * 
+	 * The following method is designed to delete a directory tree recursively.
+	 * Which of the following properties reflect the method definition? 1: public
+	 * static void delete Tree(File file) { 2: if(!file.isFile()) 3: for(File entry:
+	 * file.listFiles()) 4: delete Tree(entry); 5: else file.delete(); 6: } ==>> 1.
+	 * It can delete a single file. 2. It compiles but may throw an exception at
+	 * runtime.
+	 * 
+	 * Which correctly fills in the blank to print 2017-01-15? LocalDate hatDay =
+	 * LocalDate.of(2017, Month.JANUARY, 15); DateFormatter f =
+	 * DateFormatter.ISO_DATE; System.out.println(______________________________);
+	 * ==>> Neither of the above
+	 * 
+	 * How many of Connection, Driver, and DriverManager are JDBC interfaces
+	 * included with the JDK? ==>>Two
+	 * 
+	 * Which of the following are valid lambda expressions? 1. (Long w) -> {Long
+	 * w=5; return 5;} 2. (int count, vote) -> count*vote 3. name ->
+	 * {name.toUpperCase()} 4. dog -> dog 5. (Double adder) -> {int y;
+	 * System.out.print(adder); return adder;} 6. () -> {} ==>> 4, 5, 6
+	 * 
+	 * If the key purple is in all four of these files, which file will the
+	 * following code use for the resource bundle? Locale.setDefault(new
+	 * Locale("en", "US")); ResourceBundle rb = ResourceBundle.getBundle("Colors");
+	 * rb.getString("purple"); = 1. Colors.class 2. Colors_en_US.class 3.
+	 * Colors.properties 4. Colors_en_US.properties ==>> Colors_en_US.class
+	 * 
+	 * What is correct about the following code snippet?
+	 * Files.move(Paths.get("monkey.txt"), Paths.get("/animals"),
+	 * StandardCopyOption.ATOMIC_MOVE, LinkOption.NOFOLLOW_LINKS); =>> 1. If another
+	 * process is monitoring the file system, it will not see an incomplete file at
+	 * runtime. 2. The metadata of the monkey.txt will be moved along with the file.
+	 * 
+	 * 
+	 * Given the following diagram, which two classes can be placed in the blank
+	 * boxes? OutputStream -> FileOutputStream -> ? ? ==>> BufferedOutputStream and
+	 * PrintStream
+	 * 
+	 * Given the following code snippet, which lambda expression is the best choice
+	 * for the accumulator, based on the rules for applying a parallel reduction?
+	 * public class GoodAccumulator { int i; public void test() {
+	 * BiFunction<Integer,Integer,Integer> accumulator = _________________;
+	 * System.out.print(Arrays.asList(1,2,3,4,5) .parallelStream()
+	 * .reduce(0,accumulator,(s1, s2) -> s1 + s2)); } } :: 1. (a,b) -> i++ 2. (a,b)
+	 * -> (a-b) 3. (a,b) -> 5 4. None of the above are appropriate.==>> (a,b) -> 5
+	 * 
+	 * Which of the following methods move the cursor without returning a boolean?
+	 * :: 1. previous() 2. afterFirst 3. beforeFirst 4. beforeLast 5. absolute 6.
+	 * afterLast ==>> beforeFirst and afterLast
+	 * 
+	 * submit(){ if(){ process(); #X# else{ List = splitTnhalf();#Y# for(){ submit()
+	 * #z# } } ==>>Inserted submit at line z. Inserted process at line X. Inserted
+	 * splitTnhalf at line Y.
+	 * 
+	 * Which classes will allow the following to compile? Inpu Stream is = new
+	 * BufferedInput Stream(new File Input Stream("zoo.txt")); Input Stream wrapper
+	 * = new _______ (is); 1. ObjectOutputStream 2. ObjectInputStream 3.
+	 * FileInputStream 4. Buffered Reader 5. BufferedInput Stream 6. Buffered Writer
+	 * ==>>ObjectInputStream and BufferedInputStream
+	 * 
+	 * Locale ENUS = new Locale.Builder().setLanguage("en").setRegion("US").build();
+	 * System.out.print(ENUS.getDisplayLanguage(new Locale("fr"))); ==>> Code will
+	 * print the word "english" in French language (anglais).
+	 * 
+	 * Given the following two property files in the pod package, what does the
+	 * following class output? pod.container.properties name=generic number=2
+	 * pod.container_en.properties name=Docker type=container package pod; import
+	 * java.util.*; public class WhatKind { public static void main(String[] args) {
+	 * Locale.setDefault(new Locale("ja")); ResourceBundle rb =
+	 * ResourceBundle.getBundle("pod.container"); String name =
+	 * rb.getString("name"); // r1 String type = rb.getString("type"); // r2
+	 * System.out.println(name + " " + type); } } ==>>Line r2 throws an exception.
+	 * 
+	 * Which interfaces or classes are in a database-specific JAR file? 1.
+	 * Statement’s implementation 2.Driver 3. Statement 4. DriverManager 5. Driver’s
+	 * implementation 6. DriverManager’s implementation ==>> 1 and 5
+	 * 
+	 * Which two statements are true about the walKfileTrac method of the files
+	 * class? 1. The maxDepth parameter's value is the maximum number of directories
+	 * to visit. 2. If the file is a directory, and If that directory could not be
+	 * opened, the poatVisitDirectory method is Invoked with the I/O exception. 3.
+	 * The file tree traversal Is breadth first with the given filevisitor Invoked
+	 * for each file encountered. 4. If the file attributes cannot be lead due to on
+	 * I/O exception, the visitFileFailed method is invoked With the I/O exception.
+	 * 5. By default, symbolic links are not automatically followed by this method.
+	 * ==>> 2 and 4
+	 * 
+	 * Which of the following is equivalent to this code? Unary Operator<Integer> u
+	 * = x -> x * x; 1. Function f = x -> x*x; 2. Binary Operator<Integer, Integer>
+	 * f = x -> x*x; 3. Function<Integer> f = x -> x*x; 4. Bi Function<Integer,
+	 * Integer> f = x -> x*x; 5. Bi Function<Integer> f = x -> x*x; 6. None of the
+	 * above ==>> 6
+	 * 
+	 * Assuming the proper generic types are used, which lambda expression cannot be
+	 * assigned to a ToDoubleBiFunction functional interface reference? 1. (Integer
+	 * a, Double b) -> {int c; return b;} 2. (String u, Object v) ->
+	 * u.length()+v.length() 3. (x,y) -> {int z=2; return y/z;} 4. (h,i) -> (long)h
+	 * ==>> 2
+	 * 
+	 * Which statement is not true about these two variables? Duration duration =
+	 * Duration.ofDays(1); Period period = Period.ofDays(1); ==>> Both output the
+	 * same value when calling toString().
+	 * 
+	 * If your application has all town names in a single file named
+	 * strings.properties, what is the most specific process that has been
+	 * implemented? 1. Specialization2. Translation 3. Localization 4.
+	 * Internationalization ==>> Internationalization
+	 * 
+	 * System.out.print(Files.walk(Paths.get("/again/and/again")).count()); ==>> A
+	 * number is printed at runtime
+	 * 
+	 * Which of the following cannot be instantiated directly by the caller using
+	 * the constructor? 1. Locale 2. Properties 3. ResourceBundle ==>> 3.
+	 * 
+	 * mystery=bag type=paper 18: System.out.print(props.getProperty("mystery",
+	 * "?")); 19: System.out.print(" "); 20:
+	 * System.out.print(props.getProperty("more", "?")); ==>> bag ?
+	 * 
+	 * mystery=bag type=paper 18: System.out.print(props.getProperty("mystery"));
+	 * 19: System.out.print(" "); 20: System.out.print(props.getProperty("more"));
+	 * ==>> bag null
+	 * 
+	 * Which ExecutorService method guarantees all running tasks are stopped in an
+	 * orderly fashion?1. None of the above 2. shutdown() 3. shutdownNow() 4. halt()
+	 * =>> 1
+	 * 
+	 * Fill in the blanks: Given a valid Console instance, reader() returns
+	 * a__________ , while writer() returns a __________ ==>> Reader, Writer
+	 * 
+	 * Which resources have their close() method called when this code runs? public
+	 * static void runQuery(Connection conn) throws SQLException{ try (Statement
+	 * stmt = conn.createStatement()) { ResultSet rs =
+	 * stmt.executeQuery("select * from clowns"); rs.next(); } } =>> Only Statement
+	 * and ResultSet
+	 * 
+	 * Which three scenarios would best benefit from using a singleton pattern? 1.
+	 * Provide central access to application configuration data. 2. Allow multiple
+	 * instances of a static object to be managed in memory. 3. Manage a reusable
+	 * cache of objects. 4. Ensure that all objects are lazily instantiated. 5.
+	 * Manage write access to a log file. 6. Create read‐only objects that are
+	 * thread‐safe. ==>> 1, 3, 5
+	 * 
+	 * Which of the following statements about functional interfaces is true? 1. It
+	 * is possible to define a primitive functional interface that uses float, char,
+	 * or short. 2. It is possible to define a functional interface that returns two
+	 * data types. 3. It is not possible to define a functional interface that does
+	 * not take any arguments nor return any value. 4. None of the primitive
+	 * functional interfaces include generic arguments. ==>> 1
+	 * 
+	 * Which of the following statements are true about the equals() method? ==>> 1.
+	 * If equals(null) is called, the method should return false. 2. If equals() is
+	 * passed the wrong type, the method should return false.
+	 * 
+	 * Which statement about Closeable and AutoCloseable is true? 1. The close()
+	 * method in a class that implements Closeable cannot throw an Exception. 2.
+	 * AutoCloseable extends Closeable. 3. There is no difference; one was added for
+	 * backward compatibility. 4. The close() method in a class that implements
+	 * AutoCloseable cannot throw an IOException. ==>> 1
+	 * 
+	 * There are currently 100 rows in the table species before inserting a new row.
+	 * What is the output of the following code? try (Connection conn =
+	 * DriverManager.getConnection("jdbc:derby:zoo"); Statement stmt =
+	 * conn.createStatement()) { Result Set rs =
+	 * stmt.executeQuery("select count(*) from species"); int num =
+	 * stmt.executeUpdate("INSERT INTO species VALUES (3, 'Ant', .05)"); rs.next();
+	 * System.out.println(rs.getInt(1)); ==>> A SQLException is thrown. }
+	 * 
+	 * What package is the LocalTime class in? ==>> java.time
+	 * 
+	 * Which NIO.2 Files methods return a Stream? 1. lines() 2. readAllLines() 3.
+	 * walkFileTree() 4. list() 5. listFiles() 6. find() ==>> 1 , 4, 6
+	 * 
+	 * Which of the following is required in a database driver implementation? 1. A
+	 * file named jdbc.driver 2. A file named java.sql.Driver 3. At least one
+	 * implementation of the Connection interface 4. None of the above ==>> 3
+	 * 
+	 * Which of the following statements about DoubleSupplier and Supplier<Double>
+	 * is not true? 1. One supports a generic type, the other does not. 2. Lambdas
+	 * for both can return a double value. 3. Both are functional interfaces. 4.
+	 * Lambdas for both cannot return a null value. ==>> 4
+	 * 
+	 * Which two conditions best describe a thread that appears to be active but is
+	 * perpetually stuck and never able to finish its task? 1. Livelock 2. Deadlock
+	 * 3. Out of memory error 4. Starvation 5. Race condition 6. Loss of precision
+	 * ==>> Livelock and Starvation
+	 * 
+	 * Which ScheduledExecutorService method can result in the same action being
+	 * executed by two threads at the same time? 1. There is no such method in
+	 * ScheduledExecutorService. 2. scheduleWithFixedDelay() 3.
+	 * scheduleAtFixedDelay() 4. scheduleAtFixedRate() ==>>scheduleAtFixedRate()
+	 *
+	 * Daylight savings time ends on November 5, 2017 at 2 a.m. when we repeat the
+	 * hour. Suppose we have a ZonedDateTime that outputs
+	 * 2017-11-05T01:00-04:00[America/ New_York] when calling toString(). What is a
+	 * possible value of the ZonedDateTime obtained by adding an hour to this value?
+	 * 1. 2017-11-05T01:00-05:00[America/New_York] 2.
+	 * 2017-11-05T02:00-05:00[America/New_York] 3.
+	 * 2017-11-05T01:00-04:00[America/New_York] 4.
+	 * 2017-11-05T02:00-04:00[America/New_York] ==>>
+	 * 2017-11-05T01:00-05:00[America/New_York]
+	 * 
+	 * Which of the following is not an advantage of using an NIO.2 Path instead of
+	 * a java.io.File to work with files? 1. Provides a single method for deleting a
+	 * directory tree 2. Has ability to read operating-system-specific attributes 3.
+	 * Provides efficient access of file metadata 4. Contains built-in support for
+	 * symbolic links ==>> Provides a single method for deleting a directory tree
+	 * 
+	 * What is a common reason for a stream pipeline not to run? 1. The source
+	 * doesn’t generate any items. 2. The terminal operation is missing. 3. There
+	 * are no intermediate operations. 4. None of the above ==>> 2
+	 * 
+	 * Suppose that the file c:\book\java exists. Which of the following lines of
+	 * code creates an object that represents the file? Should have chosen 1. new
+	 * File("c:/book/java"); 2. None of the above 3. new File("c://book//java"); 4.
+	 * new File("c:\book\java"); 5. new File("c:\\book\\java"); ==>> new
+	 * File("c:/book/java"); and new File("c:\\book\\java");
+	 * 
+	 * Which of the following statements about the Callable call() and Runnable
+	 * run() methods are correct? 1. Runnable returns a generic type. 2. Both
+	 * methods return void. 3. Callable can throw a checked exception. 4. Both can
+	 * be implemented with lambda expressions. 5. Callable returns a generic type.
+	 * 6. Both can throw unchecked exceptions. 7. Callable takes a generic method
+	 * argument. ==>> 3, 4, 5, 6
+	 *
+	 * Fill in the blank: ____________is the only functional interface that does not
+	 * involve double, int, or long. ==>> BooleanSupplier
+	 * 
+	 * Which of the following static methods does not exist in the Executors class?
+	 * 1. newSingleThreadExecutor() 2. newFixedThreadPool() 3.
+	 * newSingleThreadScheduledExecutor() 4. newFixedScheduledThreadPool() ==>> 4
+	 * 
+	 * Which statement about ListResourceBundle is true? 1. A disadvantage over
+	 * properties files is that you cannot create the value at runtime. 2. Values of
+	 * type Integer are not allowed. 3. None of the above 4. Names-fr.java is a bad
+	 * implementation class name. ==>> 4
+	 * 
+	 * Which of the following are valid Callable expressions? 1. () -> 5 2. () ->
+	 * {String s = "";} 3. (int count) -> count+1 4. () ->
+	 * {System.out.println("Giraffe"); return 10;} 5. () -> "The" + "Zoo" 6. () ->
+	 * {return null} 7. a -> {return 10;} ==>> 1, 4, 5
+	 * 
+	 * Which of the following are not java.io classes? 1. FileWriter 2. PrintReader
+	 * 3. FileReader 4. BufferedWriter 5. PrintWriter 6. BufferedReader ==>>
+	 * PrintReader
+	 * 
+	 * Which of the following are JDBC interfaces in the java.sql package? 1. Driver
+	 * 2. DriverManager 3. Query 4. ResultSet ==>> I, IV
+	 * 
+	 * Which statement is true about the JDBC core classes? ==>> A Statement
+	 * automatically starts in auto-commit mode.
+	 * 
+	 * Which of the following lambda expressions can be passed to a method that
+	 * takes IntUnaryOperator as an argument? 1. (Integer w) -> w.intValue() 2. (int
+	 * q) -> q/3.1 3. (long x) -> (int)x 4. (int j) -> (int)30L 5. v ->
+	 * {System.out.print("Hello!"); return 2%1;} 6. z -> z ==>> 4, 5, 6
+	 * 
+	 * Which of the following are true? ==>> 1. DriverManager.getConnection() throws a
+	 * SQLException if the driver class is not found. 2. Class.forName() throws a
+	 * ClassNotFoundException if the driver class is not found.
 	 * 
 	 * 
 	 * 

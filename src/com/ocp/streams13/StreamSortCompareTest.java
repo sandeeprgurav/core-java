@@ -30,10 +30,12 @@ public class StreamSortCompareTest {
 	public static void main(String[] args) {
 		List<StreamSortCompareTest> obj = Arrays.asList(new StreamSortCompareTest(2, "Car"),
 				new StreamSortCompareTest(3, "Bike"), new StreamSortCompareTest(1, "Truck"));
-		obj.stream().sorted((v1, v2) -> Integer.compare(v1.getvId(), v2.getvId())) //correct 
-		//obj.stream().sorted(Comparator.comparing(v -> v.getvId()))//correct 		 
+		//obj.stream().sorted((v1, v2) -> Integer.compare(v1.getvId(), v2.getvId())) //correct		
+		obj.stream().sorted(Comparator.comparing(v -> v.getvId()))//correct 		 
 		//obj.stream().sorted((v1, v2) -> v1.getvId() < v2.getvId()) //wrong cant pass boolean condition should be int condition
 		.forEach(System.out::print);
+		
+		//obj.stream().map (v -> v.getvId()).sorted ().forEach(System.out::print); This will print 1 2 3
 	}
 }
 

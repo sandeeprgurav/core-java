@@ -6,14 +6,28 @@ import java.io.*;
 import java.nio.file.*;
 
 public class FileTest2 {
-	public static void main(String[] args) throws IOException {
-		final Path s = new File("apples.zip").toPath();
-		final Path t = FileSystems.getDefault().getPath("oranges.zip");
-		copy(s, t, REPLACE_EXISTING); // q1
-//		copy(Files.newBufferedReader(t), t, ATOMIC_MOVE); // q2
-		// method params Path, Path, CopyOption... not matching	BufferedReader, Path, StandardCopyOptio 
-	}
-
+	private int numPassengers = 1;
+	   private transient String schedule = "NONE";
+	   {numPassengers = 2;}
+	   public FileTest2() {
+	      this.numPassengers = 3;
+	      this.schedule = "Tropical Island";
+	   }
+	   public static void main(String... passengers) throws Exception {
+	      try (ObjectOutputStream o = new ObjectOutputStream(
+	            new FileOutputStream("ship.txt"))) {
+	    	  FileTest2 c = new FileTest2();
+	         c.numPassengers = 4;
+	         c.schedule = "Casino";
+	         o.writeObject(c);
+	      }
+	      try (ObjectInputStream i = new ObjectInputStream(
+	            new FileInputStream("ship.txt"))) {
+	    	  //FileTest2 c = i.readObject(); cant convert Object to FileTest2
+	    	  FileTest2 c = (FileTest2) i.readObject();
+	         System.out.print(c.numPassengers+","+c.schedule);
+	      }
+	   }
 }
 
-// Ans: Line q2 does not compile
+// Ans: The class does not compile.

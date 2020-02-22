@@ -2,7 +2,7 @@ package com.ocp.streams13;
 
 import java.util.stream.Stream;
 
-public class StreamPeekTest {
+public class StreamPeek3 {
 public static void main(String[] args) {
 	Stream.of("Java", "Unix", "Linux")
 	.filter(s-> s.contains("n"))

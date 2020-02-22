@@ -10,13 +10,22 @@ public class TreeMapTest {
 		map.put("tool", "hammer");
 		map.put("problem", "nail");
 
+		//Property props = new Property();   // The code does not compile due to line p1. 
 		Properties props = new Properties(); // p1
 		map.forEach((k, v)->props.put(k, v)); // p2
 
-		//String t = props.get("tool"); // p3
+		//String t = props.get("tool"); // p3  compile error
 		String t = (String)props.get("tool"); 
-		String n = (String)props.get("nail");
-		System.out.println(t + " " + n);
+		String n = (String)props.get("problem");
+		
+		String t1 = (String)props.getProperty("tool"); 
+		String n1 = (String)props.getProperty("problem");
+		System.out.println(t1 + " " + n1);
+		
+		//System.out.println(props.get("veggies", "none")+ " " + props.get("omni", "none")); Compile fail no two arguments
+		
+		//System.out.print(props.getDefaultProperty("mystery", "?")); No such method getDefaultProperty
+
 	}
 }
 

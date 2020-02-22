@@ -11,8 +11,11 @@ public class DbTest {
 		String url = "jdbc:derby:blue";
 		try (Connection conn = DriverManager.getConnection(url);
 				Statement stmt = conn.createStatement();
-				ResultSet rs = stmt.executeQuery("select count(*) from sky")) {
+				ResultSet rs = stmt.executeQuery("select count(*) from sky")) {			
 			System.out.println(rs.getInt(1));
+			
+			//rs.relative(rowNumber);
+			//rs.relative(-rowNumber); it will move to -rowNumber
 		}
 	}
 }

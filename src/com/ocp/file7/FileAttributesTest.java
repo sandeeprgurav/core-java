@@ -10,8 +10,8 @@ public class FileAttributesTest {
 public static void main(String[] args) throws IOException {
 	Path path = Paths.get("sloth.schedule");
 	BasicFileAttributes attributes = Files.readAttributes(path, BasicFileAttributes.class);
-	 if(attributes.size()>0 && attributes.creationTime().toMillis()>0) {
-	//attributes.setTimes(null,null,null); no such method of attributes
+	 if(attributes.size()>0 && attributes.creationTime().toMillis()>0) {		
+	//attributes.setTimes(null,null,null); no such method of attributes //line 4
 	}
 }
 }

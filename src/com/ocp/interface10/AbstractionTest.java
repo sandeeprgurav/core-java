@@ -5,5 +5,11 @@ interface Doable{
 }
 
 public abstract class AbstractionTest implements Doable{
-  // no mandatorily implement interface in abstarct class can delegate to subclass implementation.  
+  // no mandatorily implement interface in abstarct class can delegate to subclass implementation.
+	
+	//abstarct class can have static methods
+	static void test() {
+		
+	}
+	
 }

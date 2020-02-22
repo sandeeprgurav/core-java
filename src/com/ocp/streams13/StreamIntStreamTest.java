@@ -24,10 +24,9 @@ public class StreamIntStreamTest {
 	         .limit(10)
 	         .forEach(q -> s.execute(()->await(b)));
 	      s.shutdown();
-	      System.out.println("End");
+	      
 	   }
 }
 //Ans: None of the above
 
-/*End
-Jump!Jump!*/
+/*Jump!Jump! printed twice and hangs */

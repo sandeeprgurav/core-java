@@ -1,6 +1,7 @@
 package com.ocp.others12;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class InheritanceTest14 {
@@ -21,8 +22,11 @@ public class InheritanceTest14 {
 		boolean b = bus instanceof Vehicle;
 		boolean v = van instanceof Vehicle;
 		boolean a = vans instanceof Vehicle[];
-
+		  
 		System.out.println(b + " " + v + " " + a);
+		
+		//System.out.println(bus instanceof ArrayList); cant compare 
+		System.out.println(bus instanceof Collection);
 	}
 }
 

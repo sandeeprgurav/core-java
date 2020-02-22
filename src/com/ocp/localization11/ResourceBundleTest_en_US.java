@@ -14,7 +14,7 @@ public class ResourceBundleTest_en_US extends ListResourceBundle {
 	public static void main(String[] args) {
 		ResourceBundle rb = ResourceBundle.getBundle("com.ocp.localization11.ResourceBundleTest");
 		//System.out.println(rb.getString("count") + " " + rb.getString("count")); ClassCastException Int to String converiosn
-		System.out.println(rb.getObject("count") + " " + rb.getObject("count"));
+		System.out.println(rb.getObject("count") + " " + rb.getObject("count")); //With Object 1 1 
 	}
 }
 

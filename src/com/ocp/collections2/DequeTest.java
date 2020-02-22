@@ -18,5 +18,5 @@ public class DequeTest {
 		DequeTest.addAndPrintItems(new LinkedBlockingDeque<Integer>());
 	}
 }
-//Ans: The code will not compile.
+//Ans: The code will not compile. Need to throw Exeption
 

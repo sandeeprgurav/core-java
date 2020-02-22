@@ -15,9 +15,10 @@ public static void main(String[] args) {
 	List<String> list = new LinkedList<>();
 	Deque<String> queue = new ArrayDeque<>();
 	queue.push("wheel-");
-	/*Stream.of(set, list, queue)
-	.flatMap(x -> x)
-	.forEach(System.out::print);*/
+	Stream.of(set, list, queue)
+	.flatMap(x -> x.stream()) // tire-wheel-
+	//.flatMap(x -> x) // code will not compile
+	.forEach(System.out::print);
 }
 }
 

@@ -14,7 +14,7 @@ public class SteramAllMatchTest2 {
 		System.out.println(colors.stream().filter(c -> c.length() > 3).allMatch(test));
 	}
 }
-
+//Ans:Searching...
 /*
  * //It will filter ==>> green and yellow ==>> check for green, predicate return
  * false and print =>> stop execution since allMatch expect true for all if one

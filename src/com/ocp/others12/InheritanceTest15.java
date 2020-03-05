@@ -15,7 +15,7 @@ abstract class Shape {
 
 class Square extends Shape {
 	int side;
-
+    
 	Square(int side) {
 		this.side = side;
 	}
@@ -37,6 +37,9 @@ public class InheritanceTest15 extends Square {
 	public void area() {
 		System.out.println("Rectangle");
 	}
+	public static void main(String[] args) {
+		
+	}
 }
 // Ans:	At line 20, use public void area ( ) {
-/*At line 17, insert super (); super.side = x;*/
+/*At line 17, insert super(x);;*/

@@ -6,7 +6,7 @@ public class ExceptionTest12 {
 	   class DragonException extends RuntimeException {}
 	   public int tellStory() {
 	      try {} catch (BearException d) {
-	        // d = new RuntimeException();   // canot covert RuntimeException to BearException
+	        // d = new RuntimeException();   // canot assign superclass to subclass
 	         throw d;
 	      } catch (WolfException | DragonException e) {
 	         //e = new RuntimeException(); canont assign any value to e 

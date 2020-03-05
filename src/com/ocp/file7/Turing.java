@@ -5,9 +5,8 @@ import java.io.Console;
 public class Turing {
 
 	public static void main(String[] args) {
-		Console c = System.console();
-		final String response = c.readLine("Are you human?");
-		System.err.print(response);
+		
+		System.err.print(System.console().readLine("Are you human?"));
 	}
 }
 

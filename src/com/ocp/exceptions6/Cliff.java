@@ -10,7 +10,7 @@ public class Cliff {
    public final void climb() throws Exception {
       try (HikingGear gear = new HikingGear()) {
     	 System.out.println("asdad");  // e1
-         throw new RuntimeException();  //This block work as finnaly block which will always execute 
+         throw new RuntimeException();   
          //Ans is Runtime Exception. 
       }
    }

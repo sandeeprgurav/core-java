@@ -16,12 +16,12 @@ public class StreamIntStreamTest {
 	}
 	
 	public static void main(String[] chalk) {
-	      ExecutorService s = Executors.newFixedThreadPool(4);
+	      ExecutorService s = Executors.newFixedThreadPool(1);
 	      final CyclicBarrier b = new CyclicBarrier(4,
 	         () -> System.out.print("Jump!"));
 	      IntStream
 	         .iterate(1, q -> 2)
-	         .limit(10)
+	         .limit(12)
 	         .forEach(q -> s.execute(()->await(b)));
 	      s.shutdown();
 	      

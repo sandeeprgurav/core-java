@@ -1,4 +1,4 @@
-package com.ocp.collections2;
+package com.ocp.assert1;
 
 public class DataIntegrity {
 	private int score;
@@ -11,7 +11,7 @@ public class DataIntegrity {
 	public static void main(String[] books) {
 		final DataIntegrity johnny5 = new DataIntegrity();
 		assert (johnny5.score > 2) : johnny5.score++;
-		//assert johnny5.score >= 5 : System.out.print("No input"); //Compile error here , must return some value
+		//assert johnny5.score >= 5 : System.out.print("No input"); //Compile error here , must return some value : String expected
 		
 		
 		System.out.print("Made it!");

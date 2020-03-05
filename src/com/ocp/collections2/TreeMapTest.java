@@ -18,8 +18,11 @@ public class TreeMapTest {
 		String t = (String)props.get("tool"); 
 		String n = (String)props.get("problem");
 		
-		String t1 = (String)props.getProperty("tool"); 
-		String n1 = (String)props.getProperty("problem");
+		String t1 = props.getProperty("tool"); 
+		String n1 = props.getProperty("problem");
+		//String n1 = props.getProperty(1);1 is not valid param
+		//String n2 = (String)props.get(1);1 is valid param 
+		
 		System.out.println(t1 + " " + n1);
 		
 		//System.out.println(props.get("veggies", "none")+ " " + props.get("omni", "none")); Compile fail no two arguments

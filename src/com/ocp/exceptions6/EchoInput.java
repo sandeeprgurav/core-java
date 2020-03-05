@@ -8,4 +8,4 @@ public class EchoInput {
 	}
 }
 //Input : java EchoInput hi there
-//Ans : The code throws an ArrayIndex OutOfBounds Exception.
+//Ans : The code throws an ArrayIndex OutOfBounds Exception. since assert is not enabled here. 

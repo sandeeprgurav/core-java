@@ -1,4 +1,4 @@
-package com.ocp.interface10;
+package com.ocp.functionalinterfaces8;
 
 import java.util.function.Supplier;
 

@@ -5,6 +5,10 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveAction;
 
 public class ForkJoinPoolTest3 extends RecursiveAction {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int start;
 	private int end;
 

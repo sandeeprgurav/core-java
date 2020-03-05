@@ -20,6 +20,7 @@ public class CartoonCat {
 	}
 
 	public static void main(String... strings) {
+		
 		new CartoonCat().march(new CyclicBarrier(4, () -> System.out.println("Ready")));
 	}
 }

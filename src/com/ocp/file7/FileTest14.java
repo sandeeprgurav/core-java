@@ -54,8 +54,7 @@ public class FileTest14 {
 		byte[] data = new byte[] {1,2,3,4,5,6,7};
 	      try (InputStream is = new ByteArrayInputStream(data)) {
 	    	  System.out.println(is.read(new byte[2])); //pos=2, mark =0
-	         if(is.markSupported()) {
-	         System.out.println(is.read());
+	         if(is.markSupported()) {	         
 	         is.mark(5); ////pos=2 mark=5
 	         System.out.println(is.read());
 	         System.out.println(is.read()); ////pos=4

@@ -14,4 +14,5 @@ public class ArrayDequeTest2 {
 	}
 }
 
+
 // Ans: 13 18 

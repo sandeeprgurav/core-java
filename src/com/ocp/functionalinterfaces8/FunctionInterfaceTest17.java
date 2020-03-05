@@ -20,7 +20,7 @@ public class FunctionInterfaceTest17 {
 		fly(() -> new Bird());
 		fly(Penguin::new);
 	}
-	//static void fly (Supplier<? extends Bird> bird> bird) { //Dont know why this is not corerct
+	//static void fly (Supplier<? extends Bird> bird) {bird.get(); }//Dont know why this is not corerct
 	static void fly (Supplier<Bird> bird) { //this is correct
 		bird.get();
 	}

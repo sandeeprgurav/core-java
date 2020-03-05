@@ -9,10 +9,10 @@ import java.util.concurrent.Future;
 public class ExecutorServiceTest2 {
 public static void main(String[] args) throws InterruptedException, ExecutionException { // Need to throw or cathc exception when we get value from Future object
 	Callable c = new Callable() {
-		//   public Object run() {return 10;}  // Throws Exception missing 
+		//   public Object run() {return 10;}  // Callable has call method not run 
 
 		@Override
-		public Object call() throws Exception { 
+		public Object call()  { 
 			return 10;
 		}
 		};

@@ -24,4 +24,4 @@ public class GenericsTest5<Object> {
 		}); // c3
 	}
 }
-// Ans: Compile error at line 7
+// Ans:No output

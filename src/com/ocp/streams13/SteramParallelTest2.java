@@ -5,7 +5,7 @@ import java.util.List;
 
 public class SteramParallelTest2 {
 	public String concat1(List<String> values) {
-		return values.parallelStream().reduce("a", (x, y) -> x + y, String::concat);
+		return values.parallelStream().reduce(" a==>>", (x, y) -> x + y , (s1, s2) -> s1.concat(s2));
 	}
 
 	public String concat2(List<String> values) {
@@ -13,6 +13,7 @@ public class SteramParallelTest2 {
 	}
 
 	public static void main(String... questions) {
+		
 		SteramParallelTest2 c = new SteramParallelTest2();
 		List<String> list = Arrays.asList("Cat", "Hat");
 		String x = c.concat1(list);

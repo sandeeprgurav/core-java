@@ -16,8 +16,13 @@ public class InheritanceTest7 {
 			}
 		}
 	}
+	
+	void main() {
+		System.out.println(InheritanceTest7.this.level);
+	}
 
 	public static void main(String[] bots) {
+		
 		InheritanceTest7.Deep.Deeper simulation = new InheritanceTest7().new Deep().new Deeper();
 		simulation.printReality();
 	}

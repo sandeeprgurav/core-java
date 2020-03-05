@@ -19,7 +19,7 @@ public class FileTest27 {
 	}
 }
 
-// Ans: Two Errors
+// Ans: Stream<Path> files2 = Files.walk(Paths.get("D:\\report"));
 
 
 

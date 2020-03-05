@@ -24,7 +24,7 @@ public class Watch {
 	public static void main(String[] args) {
 		Watch watch = new Watch();
 		Watch smartWatch = new SmartWatch();
-		//System.out.print(watch.getName(","));
+		System.out.print(watch.getName(","));
 		System.out.print(smartWatch.getName(""));
 	}
 }

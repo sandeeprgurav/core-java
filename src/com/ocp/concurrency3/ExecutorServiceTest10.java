@@ -19,4 +19,4 @@ public class ExecutorServiceTest10 {
 	   }
 }
 
-// Ans:The execute() method call compiles.
+// Ans:scheduleWithFixedDelay these both methods are not present for  ExecutorService

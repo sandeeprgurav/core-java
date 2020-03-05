@@ -6,10 +6,18 @@ public class EqualsTest {
 		return 5;
 	}
 
-	@Override
-	// public boolean equals(EqualsTest o) { parameter must be Object
-	public boolean equals(Object o) {
+	
+	// public boolean equals(EqualsTest o) { //parameter must be Object
+	//@Override
+	public boolean equals1(Object o) {
 		return true;
+	}
+	
+	public static void main(String[] args) {
+		EqualsTest obj = new EqualsTest();
+		EqualsTest obj1 = new EqualsTest();
+		System.out.println(obj.equals1(obj1));
+		
 	}
 }
 //None of the above. The code does not compile with any of the options.

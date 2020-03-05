@@ -11,6 +11,7 @@ class MyResource1 implements AutoCloseable {
 
 class MyResource2 implements Closeable {
 	public void close() throws IOException {
+		//System.out.println("MyResource2");
 		throw new IOException();
 	}
 }

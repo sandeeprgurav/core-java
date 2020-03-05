@@ -25,6 +25,7 @@ public class StreamMethodReferenceTest2 {
 		obj.setList(i.stream().collect(Collectors.toList()));
 		// obj.getList().forEach(StreamMethodReferenceTest2::printValues);; compile
 		// error on StreamMethodReferenceTest2::printValues
+		//obj.getList().forEach(k-> obj.printValues(k));; if printValues takes String param 
 	}
 
 }

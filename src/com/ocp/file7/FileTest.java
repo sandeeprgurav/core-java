@@ -13,7 +13,7 @@ public class FileTest {
 			String temp = null;
 			while ((temp = r.readLine()) != null) {
 				w.write(temp);
-			}
+			}			
 		}
 	}
 
@@ -23,7 +23,7 @@ public class FileTest {
 }
 
 /* Options:
-1. The implementation correctly copies a regular file.
+1. The implementation correctly copies a regular file. // since w.flush() not called
 2. The class compiles without issue.
 3. The class never throws an exception at runtime.
 4. All of the above*/

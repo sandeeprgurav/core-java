@@ -9,9 +9,9 @@ public class ExceptionTest16 {
 	   public void doTaxes() throws Throwable {
 	      try {
 	         throw new IllegalStateException();
-	      } /*catch (AddingException | DividingException e) {  // p1 // Unreacheable Exception
+	      }/* catch (AddingException | DividingException e) {  // p1 // Unreacheable Exception
 	         System.out.println("Math Problem");
-	      } *//*catch (UnexpectedException f) {  // p2 // UnexpectedException is unreacheable due to Exception
+	      } catch (UnexpectedException f) {  // p2 // UnexpectedException is unreacheable due to Exception
 	         System.out.println("Unknown Error");
 	         throw f;
 	      }*/
@@ -28,7 +28,7 @@ public class ExceptionTest16 {
 	   }
 }
 
-// Ans:The code does not compile due to lines p1 and p2.
+// Ans:The code does not compile due to lines p1
 
 
 

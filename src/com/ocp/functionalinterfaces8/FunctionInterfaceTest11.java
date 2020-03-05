@@ -8,4 +8,4 @@ public class FunctionInterfaceTest11 {
 	Runnable run2 = () ->  System.out.println("Run");
 }
 
-//Ans: peek(r -> {count++; System.out.println(r); }).findFirst()
+//Ans:

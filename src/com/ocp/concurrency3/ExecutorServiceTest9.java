@@ -36,5 +36,5 @@ public class ExecutorServiceTest9 {
 	   }
 }
 
-// Ans: The code does not compile. Future get() method throws exceptions so need
-// to catch else compile error.
+// Ans://synchronized {  either with (this) or (ExecutorServiceTest9.class) else compile error 
+//if code runs it will be deadloack situation

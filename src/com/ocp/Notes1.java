@@ -1,9 +1,12 @@
 package com.ocp;
 
+import java.util.Map;
+import java.util.Properties;
+
 public class Notes1 {
 
 	/*
-	 * # Which of the following statements about inheritance and object composition
+	 * # Which of the following statements about inheritance and object composition 
 	 * are correct? 1.Object composition requires a class variable to be declared
 	 * public or accessible from a public method to be used by a class in a
 	 * different package.| 2.Inheritance supports access to protected variables. 3.
@@ -280,12 +283,7 @@ public class Notes1 {
 	 * d.minus(p); Date Time Formatter f = Date Time Formatter. ofLocalized
 	 * Time(FormatStyle.SHORT); System.out.println(d.format(f)); ==>> 11:22 AM
 	 * 
-	 * Which fills in the blank in the method signature to allow this code to
-	 * compile? import java.util.*; public class ExtendingGenerics { private static
-	 * <_____________ , U> U add(T list, U element) { list.add(element); return
-	 * element; } public static void main(String[] args) { List<String> values = new
-	 * ArrayList<>(); add(values, "duck"); add(values, "duck"); add(values,
-	 * "goose"); System.out.println(values); } } ==>> T extends Collection<U>
+	 *
 	 * 
 	 * Assume that there are two private integer variables called i and j in your
 	 * class. Which of the following will prevent the memory consistency error? ==>>
@@ -315,9 +313,7 @@ public class Notes1 {
 	 * System.out.print(stmt.executeUpdate("INSERT INTO Emp VALUES (500,'Murray')"))
 	 * ; ==>> Returns 1
 	 * 
-	 * Which can fill in the blank to have the code print true? Stream<Integer>
-	 * stream = Stream.iterate(1, i ‐> i+1); boolean b = stream.____________(i -> i
-	 * > 5); System.out.println(b);==>> Non of the above
+	 * 
 	 * 
 	 * Which of the following is not a functional interface in the
 	 * java.util.function package? =>>ShortSupplier
@@ -421,10 +417,7 @@ public class Notes1 {
 	 * Integer number = Integer.valueOf("808.1"); ==>> A NumberFormatException will
 	 * be throw.
 	 *
-	 * Which of the following are properties of classes that define immutable
-	 * objects? ==> 1. They don’t define any setter methods. 2.All of the instance
-	 * variables marked private and final. 3.They prevent methods from being
-	 * overridden.
+	 *
 	 * 
 	 * ==>> !(o instanceof Button)
 	 * 
@@ -828,7 +821,7 @@ public class Notes1 {
 	 * The Files.__________ method returns a List, while the Files.__________ method
 	 * returns a Stream. ==>> readAllLines(), lines()
 	 * 
-	 * class Building {} class House extends Building{} Building bh = new House();
+	 * class Building {} class House extends Building{} Building b = new House();
 	 * House p = (House) b; ==>> class Cast Exception
 	 * 
 	 * ==>> 1. At line 17, insert super (x); 2. At line 20, use public void area ( )
@@ -1416,14 +1409,9 @@ public class Notes1 {
 	 * q) -> q/3.1 3. (long x) -> (int)x 4. (int j) -> (int)30L 5. v ->
 	 * {System.out.print("Hello!"); return 2%1;} 6. z -> z ==>> 4, 5, 6
 	 * 
-	 * Which of the following are true? ==>> 1. DriverManager.getConnection() throws a
-	 * SQLException if the driver class is not found. 2. Class.forName() throws a
+	 * Which of the following are true? ==>> 1. DriverManager.getConnection() throws
+	 * a SQLException if the driver class is not found. 2. Class.forName() throws a
 	 * ClassNotFoundException if the driver class is not found.
-	 * 
-	 * 
-	 * 
-	 * 
-	 * 
 	 * 
 	 */
 

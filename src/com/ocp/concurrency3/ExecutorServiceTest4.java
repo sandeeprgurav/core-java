@@ -10,7 +10,7 @@ public class ExecutorServiceTest4 {
 	public static void main(String[] args) throws InterruptedException, ExecutionException { 
 		/*ScheduledExecutorService t = Executors
 				  .newSingleThreadScheduledExecutor();
-				Future result = t.execute(System.out::println); // cannot pass Syso since it returns void
+				Future result = t.execute(System.out::println); // t.exceut returns void not Future
 				t.invokeAll(null);
 				 t.scheduleAtFixedRate(() -> {return;}, 5, TimeUnit.MINUTES);*/
 				 

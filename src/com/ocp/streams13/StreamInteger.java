@@ -10,4 +10,4 @@ public static void main(String[] args) {
 }
 }
 //Options: 1. noneMatch 2. anyMatch 3. allMatch
-//None of the above : since code will go in infinite loop, limit() call is missing to limit the stream data. 
+//None of the above : Since condition will never match as stream of 1 will never be greater than 5. Infinite loop

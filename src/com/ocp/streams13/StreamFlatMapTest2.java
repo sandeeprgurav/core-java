@@ -13,3 +13,4 @@ public class StreamFlatMapTest2 {
 				.forEach(i -> System.out.format("%d ", i));
 	}
 }
+//Ans a97 b98 c99 d100 e101 f102 g103 

@@ -9,8 +9,12 @@ public class ArrayDequeTest {
 		ad.add(2);
 		ad.offerLast(3);
 		ad.offer(4);
-		ad.poll();
+		ad.pop();
 		System.out.println(ad);
 	}
 }
+ 
+
+
+
 //Ans: [2, 3, 4]

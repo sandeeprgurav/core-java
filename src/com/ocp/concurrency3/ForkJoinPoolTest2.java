@@ -7,7 +7,7 @@ public class ForkJoinPoolTest2 extends RecursiveAction {
 	static int[] sheep = new int[] { 1, 2, 3, 4 };
 	final int start;
 	final int end;
-	int count = 0;
+	int count = 2;
 
 	public ForkJoinPoolTest2(int start, int end) {
 		this.start = start;

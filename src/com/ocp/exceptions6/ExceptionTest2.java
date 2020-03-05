@@ -8,10 +8,10 @@ public class ExceptionTest2 {
 	      try {
 	         makeCall();
 	      }
-	      /* catch (MissedCallException e) { // Unreacheabke Exception since RuntimeException is not cached by Exception class 
+	      /*catch (MissedCallException e) { //  MissedCallException exception not thrown from try body
 	         throw new RuntimeException("Voicemail");
-	      }*/
-	      finally {
+	      }
+	      */finally {
 	         throw new RuntimeException("Text");
 	      }
 	   }

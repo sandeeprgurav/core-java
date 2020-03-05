@@ -11,8 +11,7 @@ public static void main(String[] args) {
 	List objects= new ArrayList();
 	HashSet<? super ClassCastException> set = new HashSet<Exception>();
 	ArrayList<? super Date> list1 = new ArrayList<Date>();
-	List<String> list2 = new Vector<String>();
-	
+	List<String> list2 = new Vector<String>();	
 	List<?> list3= new ArrayList<String>();
 	//List<?> list1 = new ArrayList<?>(); compile error
 	

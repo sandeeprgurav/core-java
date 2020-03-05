@@ -8,15 +8,18 @@ public class EncapsulationTest {
   EncapsulationTest(){
 	   
   }
+
+
 @Override
 public String toString() {
 	return "EncapsulationTest [name=" + name + ", contract=" + contract + ", salary=" + salary + "]";
 }
-  
+
+
 public static void main(String[] args) {
 	EncapsulationTest e = new EncapsulationTest();
 	e.name= "Joe";
 	
-	System.out.println(e);
+	System.out.println(new EncapsulationTest());
 }
 }

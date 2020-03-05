@@ -1,4 +1,4 @@
-package com.ocp.streams13;
+package com.ocp.functionalinterfaces8;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,6 +18,10 @@ public class Product {
 	}
 
 	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	public void setPrice1(int price) {
 		this.price = price;
 	}
 

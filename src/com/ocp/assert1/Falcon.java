@@ -1,5 +1,5 @@
 package com.ocp.assert1;
-
+// Notes : https://www.baeldung.com/java-assert
 public class Falcon extends Exception {
 	   private int parsec = 12;
 	   public Falcon(String name) {

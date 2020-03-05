@@ -10,9 +10,10 @@ public class ExceptionTest9 {
 	public static void main(String[] args) throws SneezeException {
 		try {
 			throw new SneezeException();
-			// } catch (SneezeException | SniffleException e) { SniffleException will not be
-			// called since thrown exception is SneezeException
-		} catch (SneezeException e) {
+		}
+			 /*catch (SneezeException | SniffleException e) { //subclass and superclass should not be together
+
+		}*/ catch (SneezeException e) {
 
 			throw e;
 		}

@@ -13,8 +13,8 @@ public class FileTest5 {
 	}
 
 	public String getNameSafely() throws IOException {
-		try (final BufferedReader r = new BufferedReader(new FileReader("saved.name"))) {
-			final String name = r.readLine();
+		try (BufferedReader r = new BufferedReader(new FileReader("saved.name"))) {
+			String name = r.readLine();			
 			// r.flush(); Reader doesnt have fluhs() method
 			return name;
 		}

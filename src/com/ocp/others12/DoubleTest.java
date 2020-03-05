@@ -5,6 +5,7 @@ public class DoubleTest {
 		 
 		try {
 			Double number = Double.valueOf("120D");
+			System.out.println(number);
 		} catch (NumberFormatException ex) {
 			System.out.println("ex");
 		}

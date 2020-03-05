@@ -12,8 +12,8 @@ public class OverloadingTest {
 	public static void main(String[] args) {
 		char x = 8;
 		int z = '8';
-		//System.out.println(x); //
-		//System.out.println(z); //56
+		System.out.println(x); //
+		System.out.println(z); //56
 		System.out.println(doMsg(x));
 		System.out.println(doMsg(z));
 	}

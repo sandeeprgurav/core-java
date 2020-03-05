@@ -16,7 +16,7 @@ public class ExecutorServiceTest3 {
 		Runnable r1 = () -> Stream.of(1, 2, 3).parallel();
 		Callable r2 = () -> Stream.of(4, 5, 6).parallel();
 
-		Future<Stream> f1 = e.submit(r1); // Cant pass Runnable to Future object 
+		Future<Stream> f1 = e.submit(r1); // Cant cast to Future <Steram> where it returns Future only for Runnable 
 		Future<Stream> f2 = e.submit(r2);
 
 		//Stream<Integer> s = Stream.of(f1.get(), f2.get()).flatMap(p -> p).parallelStream(); // parallelStream on flatMap not exist

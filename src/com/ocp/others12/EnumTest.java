@@ -8,7 +8,7 @@ public class EnumTest {
 		// ; is mandatory line
 		boolean hasHair;
 
-		private AnimalClasses(boolean hasHair) { // private permitted not public access modifier
+		AnimalClasses(boolean hasHair) { // private permitted not public access modifier
 			this.hasHair = hasHair;
 		}
 

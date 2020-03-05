@@ -2,9 +2,12 @@ package com.leetcode;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -38,6 +41,9 @@ public class DegreeOfArrays {
 		int length = 0;
 		String arrayData = null;
 		int[] array = null;
+		List s = new ArrayList();
+		DegreeOfArrays obj1 =new DegreeOfArrays();
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		while (StringUtils.isEmpty(thisLine = br.readLine()) == false) {
 			// System.out.println(thisLine);

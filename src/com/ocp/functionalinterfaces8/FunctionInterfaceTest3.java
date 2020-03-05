@@ -19,8 +19,10 @@ public class FunctionInterfaceTest3 {
 		Vehicle v2 = speed -> System.out.println("Fly at "+speed);
 		v2.ride(100);
 		
-		Vehicle v3 = (speed)-> System.out.println("Fly at "+speed);
+		Vehicle v3 = (speed)-> System.out.println("Fly at "+speed);;
 		v3.ride(100);
+		
+		
 		
 		//Vehicle v4 = int speed-> System.out.println("Fly at "+speed); //error at int
 		//v4.ride(100);

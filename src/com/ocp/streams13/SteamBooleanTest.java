@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 public class SteamBooleanTest {
 public static void main(String[] args) {
-	Stream<Boolean> bools = Stream.iterate(true,b->!b);
+	Stream<Boolean> bools = Stream.iterate(false,b->!b);
 	Map<Boolean, List<Boolean>> map = bools.limit(1).collect(partitioningBy(b->b));
 	System.out.println(map);
 	

@@ -23,7 +23,7 @@ public class ForkJoinPoolTest4 extends RecursiveTask<String> {
 	   public static void main(String[] purpose) {
 	      ForkJoinPool pool = new ForkJoinPool();
 	      ForkJoinTask<?> task = new ForkJoinPoolTest4(10);
-	      System.out.print(pool.invoke(task));
+	      System.out.println(pool.invoke(task));
 	      pool.shutdown();
 	   }
 }

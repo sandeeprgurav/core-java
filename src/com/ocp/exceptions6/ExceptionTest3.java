@@ -9,7 +9,7 @@ public void surf() throws RuntimeException {
        throw new TideException();
     } catch (IllegalStateException | TideException t) {}
     //} catch (Exception a | RuntimeException f) {} // RuntimeException already caught
-    //} catch (	TideException | IOException i) {} // must be subclass of throwable
+    //} catch (	TideException | IOException i) {} //  IOException is not thrown from try body
     //} catch (	TideException | Exception x) {} // TideException Exception already caught
  }
 

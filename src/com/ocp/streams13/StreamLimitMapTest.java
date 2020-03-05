@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 public class StreamLimitMapTest {
 	public static void main(String[] args) {
-		//Stream.iterate(1, x -> x++).limit(5).map(x -> x).collect(Collectors.joining());
+		Stream.iterate(1, x -> x++).limit(5).map(x -> ""+x).collect(Collectors.joining());
 		//1                                       //2                    //3
 		System.out.println(Stream.iterate(1, x -> ++x).limit(5).map(x ->""+ x).collect(Collectors.joining()));
 

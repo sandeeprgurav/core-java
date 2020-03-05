@@ -16,8 +16,8 @@ public class MapSortTest {
 		Map<Integer, String> treeMap = new TreeMap<Integer, String>(new Comparator<Integer>() {
 			@Override
 			public int compare(Integer o1, Integer o2) {
-				return o1.compareTo(o2); //ascending order
-				//return o2.compareTo(o1); //descending order
+				//return o1.compareTo(o2); //ascending order
+				return o2.compareTo(o1); //descending order
 			}
 		});
 		treeMap.putAll(unsortMap);

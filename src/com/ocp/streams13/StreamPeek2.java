@@ -12,6 +12,8 @@ public class StreamPeek2 {
        forEach(System.out::println); //line n3
 	}
 }
+
+
 //Replace line n3 with .forEach (n -> System.out.println ("New Price" + n));
 
 /*Options: 1.Replace line n2 with .mapToInt (n -> n – 1);

@@ -1,12 +1,15 @@
 package com.ocp.others12;
 
 class X {
+	int i = 10;
 	public void mX() {
 		System.out.println("Xm1");
 	}
 }
 
 class Y extends X {
+	int i = 20;
+	@Override
 	public void mX() {
 		System.out.println("Xm2");
 	}
@@ -22,6 +25,9 @@ public class InheritanceTest3 {
 		Y yRef = (Y) xRef;
 		yRef.mY();
 		xRef.mX();
+		yRef.mX();
+		System.out.println(xRef.i);
+		System.out.println(yRef.i);
 	}
 
 }

@@ -13,25 +13,20 @@ public class 01SelectionSort
         arr.forEach((i) -> System.out.println(i));
     }
     
-   static ArrayList<Integer> selection_sort(ArrayList<Integer> arrList) {
-    int []  arr =   arrList.stream().mapToInt(i -> i).toArray();
-    int n = arr.length;
-    for(int i =0;i<n-1;i++) {
-        int minValue = arr[i];
-        int minIndex = i;
-        for(int k=i+1; k < n-1; k++) {
-            if(arr[k]<minValue) {
-              minValue = arr[k];     
-              minIndex=k;
+   static ArrayList<Integer> selection_sort(ArrayList<Integer> arr) {
+     for(int i = 0; i < arr.size(); i++){
+            int minIndex = i;
+            for(int j = i + 1; j < arr.size(); j++){
+                if(arr.get(j) < arr.get(minIndex)){
+                    minIndex = j;
+                }
             }
+            int temp = arr.get(i);
+            arr.set(i,arr.get(minIndex));
+            arr.set(minIndex,temp);
+
         }
-        int temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
-    }
-     ArrayList<Integer> finalList = new ArrayList<>();
-     for (int i : arr) finalList.add(i);
-     return finalList;
+        return arr;
     }
     
 }
